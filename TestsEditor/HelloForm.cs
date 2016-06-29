@@ -3,7 +3,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
-using Check;
+//using Check;
 
 namespace TestsEditor
 {
@@ -15,8 +15,8 @@ namespace TestsEditor
         {
             InitializeComponent();
 
-            if (!Checking.DataChecking())
-                MessageBox.Show("Некоторые файлы, необходимые для стабильной работы приложения, не были обнаружены!!!\nНастоятельно рекомендуем переустановить программу!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+          //  if (!Checking.DataChecking())
+            //    MessageBox.Show("Некоторые файлы, необходимые для стабильной работы приложения, не были обнаружены!!!\nНастоятельно рекомендуем переустановить программу!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             DirectoryInfo TestsDir = new DirectoryInfo("Tests"); //Создаем DiryctoryInfo соответствующее папке Tests c тестами
 
